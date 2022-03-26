@@ -1,0 +1,122 @@
+.block{
+   display:grid;
+   grid-template-columns: repeat(auto-fit,30rem);
+   justify-content:center;
+}
+
+.container{
+    margin:25px;
+    border:0px solid black;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0px 6px 18px -9px rgba(0,0,0,0.75);
+    transition: transform 200ms ease-in;
+    
+    max-width:380px;
+    max-height:530px;
+    /* width:100%;  */
+    cursor:pointer;
+
+    background-color: #e5e5f7;
+    opacity: 0.9;
+    background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 10px 10px;
+}
+.container:hover{ 
+    transform:scale(1.02);
+}
+
+.container>img{
+    object-fit:fill;
+    max-width:380px;
+    max-height:300px;
+    width:100%;
+}
+
+.name_id{
+    display:flex;
+    margin:10px;
+}
+.name_id>p{
+    margin:10px;
+    font-size:17px;
+    font-weight:600;
+    font-family: 'Times New Roman', Times, serif;
+}
+.name_id>p>span{
+    font-size:17px;
+    font-weight:300;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(92, 90, 90);
+    
+}
+
+.capacity_price_stationtype{
+    display:flex;
+    margin:10px;
+}
+.capacity_price_stationtype>p{
+    margin:10px;
+    font-size:17px;
+    font-weight:600;
+    font-family: 'Times New Roman', Times, serif;
+}
+.capacity_price_stationtype>p>span{
+    font-size:17px;
+    font-weight:300;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(92, 90, 90);
+}
+
+.rental_methods{
+    margin:20px;
+    font-size:17px;
+    font-weight:600;
+    font-family: 'Times New Roman', Times, serif;
+}
+.rental_methods>p>span{
+    margin:10px;
+    font-size:17px;
+    font-weight:300;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(92, 90, 90);
+}
+
+.rental_uris{
+    display:flex;
+    align-items: center;
+    margin-left:20px;
+    margin-right:20px;
+    /* margin-bottom:20px; */
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.rental_uris>p{
+    font-weight:600;
+    font-size:17px;
+}
+.rental_uris>a{
+    margin-left:20px;
+    
+}
+.android{
+    padding:8px 10px 8px 10px;
+    background-color:rgb(75, 75, 236);
+    color:white;
+    border-radius: 50px;
+}
+.android:hover{
+    background-color:rgb(10, 5, 5);
+    transform:scale(1.09);
+}
+
+.ios{
+    padding:8px 10px 8px 10px;
+    background-color:rgb(8, 8, 10);
+    color:white;
+    border-radius: 50px;
+}
+.ios:hover{
+    background-color:rgb(75, 75, 236);
+    transform:scale(1.09);
+}
